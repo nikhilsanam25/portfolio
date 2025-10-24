@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Sanam | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #0d6efd;
+    }
+    nav a.nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #004aad);
+      color: white;
+      text-align: center;
+      padding: 150px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #0d6efd;
+      margin-bottom: 30px;
+    }
+    .project-card {
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Nikhil Sanam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Hello, I'm <span class="text-warning">Nikhil Sanam</span></h1>
+    <p class="mt-4 px-md-5">
+      Iam an aspiring Full Stack Developer. I am a diligent person who always tries to improve my skills. I constantly set goals for myself and thrive on challenges.
+      I am not comfortable settling and always strive to do better.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title text-center">Education</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h5>B.Tech in Computer Science & Engineering</h5>
+              <p>Vellore Institute of Technology, Vellore (2022) – <strong>7.44 / 10</strong></p>
+            </li>
+            <li class="list-group-item">
+              <h5>Senior High School (12th)</h5>
+              <p>Narayana Junior College, Vijayawada (2018) – <strong>877 / 1000</strong></p>
+            </li>
+            <li class="list-group-item">
+              <h5>High School (10th)</h5>
+              <p>Narayana English Medium High School, Vijayawada (2016) – <strong>9.5 / 10</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Pothole and Traffic Symbol Detection</h5>
+              <p class="card-text">Developed a system for self-driving cars to detect potholes and traffic symbols using Single Shot Detector Algorithm. (Accepted in IJITEE Journal)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Sentimental Analysis of Twitter Data</h5>
+              <p class="card-text">Extracted tweets, preprocessed them, and analyzed sentiment scores using RStudio and data visualization techniques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Plant Abnormality Detection</h5>
+              <p class="card-text">Built a machine learning model to detect infected leaves by analyzing image attributes. (Accepted in IJITEE Journal)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container text-center">
+      <h2 class="section-title">Skills</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <span class="badge bg-primary p-3">HTML</span>
+        <span class="badge bg-primary p-3">CSS</span>
+        <span class="badge bg-primary p-3">Bootsrap</span>
+        <span class="badge bg-primary p-3">Javascript</span>
+        <span class="badge bg-primary p-3">Python</span>
+        <span class="badge bg-primary p-3">R Studio</span>
+        <span class="badge bg-primary p-3">MySQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="list-group list-group-flush d-inline-block text-start">
+        <li class="list-group-item">Algorithmic Thinking – Rice University (Coursera)</li>
+        <li class="list-group-item">Web Application Technologies and Django – University of Michigan (Coursera)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container text-center">
+      <h2 class="section-title">Contact Me</h2>
+      <p><i class="bi bi-envelope-fill"></i> <a href="mailto:nikhil.sanam25@gmail.com">nikhil.sanam25@gmail.com</a></p>
+      <p><i class="bi bi-telephone-fill"></i> +91-7670894214</p>
+      <p>Andhra Pradesh, India</p>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
