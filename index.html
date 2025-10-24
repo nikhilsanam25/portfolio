@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,40 +13,66 @@
       font-family: 'Poppins', sans-serif;
       scroll-behavior: smooth;
     }
+
     nav {
       background-color: #0d6efd;
     }
+
     nav a.nav-link {
       color: white !important;
       font-weight: 500;
     }
+
     section {
       padding: 80px 0;
     }
-    .hero {
-      background: linear-gradient(135deg, #0d6efd, #004aad);
-      color: white;
-      text-align: center;
-      padding: 150px 0;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 600;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
+
     .section-title {
       font-weight: 600;
       color: #0d6efd;
       margin-bottom: 30px;
     }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Glass effect card */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      max-width: 700px;
+    }
+
+    /* Minimal typography adjustments */
+    .glass-card h1 {
+      font-size: 2.8rem;
+    }
+
+    .glass-card p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-top: 15px;
+    }
+
     .project-card {
       transition: transform 0.2s;
     }
+
     .project-card:hover {
       transform: translateY(-5px);
     }
+
     footer {
       background: #0d6efd;
       color: white;
@@ -54,6 +81,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -77,7 +105,19 @@
   </nav>
 
   <!-- Hero Section -->
-<section class="hero" id="home">
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center" id="home">
+    <div class="glass-card text-center p-5 mx-3">
+      <h1 class="fw-bold mb-3">Hello, I'm <span class="text-primary">Nikhil Sanam</span></h1>
+      <p class="lead">
+        Iam an aspiring Full Stack Developer. I am a diligent person who always tries to improve my skills. I constantly
+        set goals for myself and thrive on challenges.
+        I am not comfortable settling and always strive to do better.
+      </p>
+    </div>
+  </section>
+
+  <!-- <section class="hero" id="home">
   <div class="container">
     <h1>Hello, I'm <span class="text-warning">Nikhil Sanam</span></h1>
     <p class="mt-4 px-md-5">
@@ -85,7 +125,7 @@
       I am not comfortable settling and always strive to do better.
     </p>
   </div>
-</section>
+</section> -->
 
 
   <!-- Education -->
@@ -122,7 +162,8 @@
           <div class="card project-card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Pothole and Traffic Symbol Detection</h5>
-              <p class="card-text">Developed a system for self-driving cars to detect potholes and traffic symbols using Single Shot Detector Algorithm. (Accepted in IJITEE Journal)</p>
+              <p class="card-text">Developed a system for self-driving cars to detect potholes and traffic symbols using
+                Single Shot Detector Algorithm. (Accepted in IJITEE Journal)</p>
             </div>
           </div>
         </div>
@@ -130,7 +171,8 @@
           <div class="card project-card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Sentimental Analysis of Twitter Data</h5>
-              <p class="card-text">Extracted tweets, preprocessed them, and analyzed sentiment scores using RStudio and data visualization techniques.</p>
+              <p class="card-text">Extracted tweets, preprocessed them, and analyzed sentiment scores using RStudio and
+                data visualization techniques.</p>
             </div>
           </div>
         </div>
@@ -138,7 +180,8 @@
           <div class="card project-card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Plant Abnormality Detection</h5>
-              <p class="card-text">Built a machine learning model to detect infected leaves by analyzing image attributes. (Accepted in IJITEE Journal)</p>
+              <p class="card-text">Built a machine learning model to detect infected leaves by analyzing image
+                attributes. (Accepted in IJITEE Journal)</p>
             </div>
           </div>
         </div>
@@ -187,4 +230,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
